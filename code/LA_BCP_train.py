@@ -30,7 +30,7 @@ from networks.net_factory import net_factory
 from utils.BCP_utils import context_mask, mix_loss, parameter_sharing, update_ema_variables
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--root_path', type=str, default='/data/byh_data/SSNet_data/LA', help='Name of Dataset')
+parser.add_argument('--root_path', type=str, default='../data/LA/', help='Name of Dataset')
 parser.add_argument('--exp', type=str,  default='BCP', help='exp_name')
 parser.add_argument('--model', type=str, default='VNet', help='model_name')
 parser.add_argument('--pre_max_iteration', type=int,  default=2000, help='maximum pre-train iteration to train')
