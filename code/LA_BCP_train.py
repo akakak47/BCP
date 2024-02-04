@@ -41,7 +41,7 @@ parser.add_argument('--batch_size', type=int, default=8, help='batch_size per gp
 parser.add_argument('--base_lr', type=float,  default=0.01, help='maximum epoch number to train')
 parser.add_argument('--deterministic', type=int,  default=1, help='whether use deterministic training')
 parser.add_argument('--labelnum', type=int,  default=8, help='trained samples')
-parser.add_argument('--gpu', type=str,  default='1', help='GPU to use')
+parser.add_argument('--gpu', type=str,  default='0', help='GPU to use')
 parser.add_argument('--seed', type=int,  default=1337, help='random seed')
 parser.add_argument('--consistency', type=float, default=1.0, help='consistency')
 parser.add_argument('--consistency_rampup', type=float, default=40.0, help='consistency_rampup')
