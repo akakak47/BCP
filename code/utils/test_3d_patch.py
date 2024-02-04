@@ -19,9 +19,9 @@ def getLargestCC(segmentation):
 
 def var_all_case_LA(model, num_classes, patch_size=(112, 112, 80), stride_xy=18, stride_z=4):
    
-    with open('/data/byh_data/SSNet_data/LA/test.list', 'r') as f:
+    with open('../data/LA/test.list', 'r') as f:
         image_list = f.readlines()
-    image_list = ["/data/byh_data/SSNet_data/LA/2018LA_Seg_Training Set/" + item.replace('\n', '') + "/mri_norm2.h5" for item in image_list]
+    image_list = ["../data/LA/2018LA_Seg_Training Set/" + item.replace('\n', '') + "/mri_norm2.h5" for item in image_list]
     loader = tqdm(image_list)
     total_dice = 0.0
     for image_path in loader:
@@ -143,9 +143,9 @@ def test_single_case(model, image, stride_xy, stride_z, patch_size, num_classes=
 
 def var_all_case_LA_plus(model_l, model_r, num_classes, patch_size=(112, 112, 80), stride_xy=18, stride_z=4):
    
-    with open('/data/byh_data/SSNet_data/LA/test.list', 'r') as f:
+    with open('../data/LA/test.list', 'r') as f:
         image_list = f.readlines()
-    image_list = ["/data/byh_data/SSNet_data/LA/2018LA_Seg_Training Set/" + item.replace('\n', '') + "/mri_norm2.h5" for item in image_list]
+    image_list = ["../data/LA/2018LA_Seg_Training Set/" + item.replace('\n', '') + "/mri_norm2.h5" for item in image_list]
     loader = tqdm(image_list)
     total_dice = 0.0
     for image_path in loader:
