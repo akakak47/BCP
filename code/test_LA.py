@@ -13,7 +13,7 @@ parser.add_argument('--model', type=str,  default='VNet', help='model_name')
 parser.add_argument('--gpu', type=str,  default='0', help='GPU to use')
 parser.add_argument('--detail', type=int,  default=1, help='print metrics for every samples?')
 parser.add_argument('--nms', type=int, default=1, help='apply NMS post-processing?')
-parser.add_argument('--labelnum', type=int, default=4, help='labeled data')
+parser.add_argument('--labelnum', type=int, default=8, help='labeled data')
 parser.add_argument('--stage_name',type=str, default='self_train', help='self_train or pre_train')
 
 FLAGS = parser.parse_args()
